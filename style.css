@@ -711,5 +711,6 @@ form button:hover {
   form textarea {
     border-radius: 2px;
     width: 100%;
+    height: 40vh;
   }
 }
