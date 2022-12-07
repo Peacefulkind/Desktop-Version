@@ -37,6 +37,7 @@ img {
 
 .top {
   background-color: #fff;
+  width: 100%;
 }
 
 .header {
@@ -344,6 +345,7 @@ img {
   gap: 24px;
   background-color: #fff;
   position: absolute;
+  width: 100%;
 }
 
 .container2 {
@@ -511,11 +513,16 @@ form button:hover {
 @media (min-width: 768px) {
   body {
     padding: 24px;
+    overflow-x: hidden;
   }
 
   .top {
     border-bottom-left-radius: 100px;
-  }
+    width: 1440px;
+    margin-left: -3vw;
+    height: 100vh;
+    margin-top: -5vh;
+  } 
 
   .header {
     padding: 14px 80px;
@@ -530,16 +537,14 @@ form button:hover {
     flex-direction: row;
     color: #396df2;
     gap: 15px;
+    margin-right: 5vw;
   }
 
   .section {
-    background-position: top center;
-    background-size: 90% 90vh;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 76px;
-    width: 100%;
-    border-bottom-left-radius: 50px;
+    background-image: url('images/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 100px;
   }
 
   .description p {
@@ -554,11 +559,14 @@ form button:hover {
   .title {
     margin-left: 100px;
     margin-right: 100px;
+    width: 100%;
+    margin-top: 20vh;
   }
 
   .info {
     margin-left: 100px;
     margin-right: 100px;
+    
   }
 
   .works {
@@ -570,6 +578,8 @@ form button:hover {
     display: flex;
     flex-direction: row;
     gap: 46px;
+    width: 1156px;
+    margin-left: -2vw;
   }
 
   #card2 {
@@ -578,6 +588,8 @@ form button:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 46px;
+    width: 1156px;
+    margin-left: -2vw;
   }
 
   #card3 {
@@ -586,6 +598,8 @@ form button:hover {
     display: flex;
     flex-direction: row;
     gap: 46px;
+    width: 1156px;
+    margin-left: -2vw;
   }
 
   #card4 {
@@ -595,6 +609,8 @@ form button:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 46px;
+    width: 1156px;
+    margin-left: -2vw;
   }
 
   .description {
@@ -634,6 +650,7 @@ form button:hover {
     display: flex;
     flex-direction: row;
     border-top-right-radius: 100px;
+    width: 100%;
   }
 
   .container-about {
@@ -642,6 +659,7 @@ form button:hover {
     align-items: flex-start;
     gap: 24px;
     width: 60%;
+    margin-top: -40vh;
   }
 
   .social_media_about {
@@ -672,6 +690,8 @@ form button:hover {
 
   .skill-list {
     width: 40%;
+    margin-top: -5vh;
+    margin-left: -8vw;
   }
 
   .langList {
@@ -690,7 +710,10 @@ form button:hover {
     align-items: center;
     gap: 24px;
     z-index: 1;
-    margin-top: 750px;
+    margin-top: 580px;
+    width: 90%;
+    margin-left: -1vw;
+    width: 91%;
   }
 
   form {
