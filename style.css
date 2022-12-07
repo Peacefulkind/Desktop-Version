@@ -522,7 +522,7 @@ form button:hover {
     margin-left: -3vw;
     height: 100vh;
     margin-top: -5vh;
-  } 
+  }
 
   .header {
     padding: 14px 80px;
@@ -566,7 +566,6 @@ form button:hover {
   .info {
     margin-left: 100px;
     margin-right: 100px;
-    
   }
 
   .works {
@@ -711,8 +710,7 @@ form button:hover {
     gap: 24px;
     z-index: 1;
     margin-top: 580px;
-    width: 90%;
-    margin-left: -1vw;
+    margin-left: -2vw;
     width: 91%;
   }
 
