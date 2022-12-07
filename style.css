@@ -533,8 +533,8 @@ form button:hover {
   }
 
   .section {
-    background-position: left top;
-    background-size: cover;
+    background-position:top center;
+    background-size: 95% 90vh;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 76px;
