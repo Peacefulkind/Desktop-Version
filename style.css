@@ -492,24 +492,6 @@ form button:hover {
   height: 5px;
 }
 
-.sec-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.top-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.popup-image {
-  max-width: 100%;
-}
-
-.button-image {
-  width: 20px;
-}
-
 @media (min-width: 768px) {
   body {
     padding: 24px;
