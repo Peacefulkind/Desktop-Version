@@ -107,7 +107,7 @@ const arrWork = [
   },
 ];
 
-for (let i = 0; i < arrWork.length; i+=1) {
+for (let i = 0; i < arrWork.length; i += 1) {
   let languages = '';
   arrWork[i].technologies.forEach((language) => {
     languages += `
