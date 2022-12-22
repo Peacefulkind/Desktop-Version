@@ -1,6 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-plusplus */
-/* eslint-disable no-unused-vars */
 const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
