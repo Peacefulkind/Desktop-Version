@@ -108,7 +108,7 @@ const arrWork = [
 ];
 
 // eslint-disable-next-line no-console
-for (let i = 0; i < arrWork.length; ++1) {
+for (let i = 0; i < arrWork.length; i++) {
   let languages = '';
   arrWork[i].technologies.forEach((language) => {
     languages += `
