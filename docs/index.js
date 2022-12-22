@@ -1,7 +1,6 @@
 const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
-const Modal = document.querySelector('.modal-container');
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
@@ -108,7 +107,7 @@ const arrWork = [
   },
 ];
 
- for (let i = 0; i < arrWork.length; i++) {
+for (let i = 0; i < arrWork.length; i++) {
   let languages = '';
   arrWork[i].technologies.forEach((language) => {
     languages += `
