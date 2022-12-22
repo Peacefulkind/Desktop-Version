@@ -110,7 +110,7 @@ img {
 .nav-menue.active {
   left: 0;
   opacity: 0.9;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
 }
 
 .section {
