@@ -227,4 +227,4 @@ form.addEventListener('input', () => {
 const getLocalStorageData = JSON.parse(localStorage.getItem('contact'));
 userName.value = getLocalStorageData.username;
 Email.value = getLocalStorageData.email;
-Msg.value = getLocalStorageData.message
+Msg.value = getLocalStorageData.message;
