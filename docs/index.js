@@ -1,14 +1,6 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-plusplus */
-/* eslint-disable no-unused-vars */
 const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
-const Modal = document.querySelector('.modal-container');
-const form = document.querySelector('#contactme');
-const userName = document.getElementById('name');
-const Email = document.getElementById('email');
-const Msg = document.getElementById('message');
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
@@ -115,52 +107,7 @@ const arrWork = [
   },
 ];
 
-const openPop = (id) => {
-  const getDetail = arrWork.filter((i) => i?.id === id);
-  let modaltechnology = '';
-  getDetail[0].technologies.forEach((language) => {
-    modaltechnology += `
-        <li>${language}</li>
-      `;
-  });
-  Modal.innerHTML = `
-  <div class="modalbox">
-    <div class="pop-top">
-      <div class="top-title">
-        <h3 class="modaltitle">${getDetail[0].title}</h3>
-        <img onclick="CloseModal()" class="close-modal" src="images/close.jpg" alt="closebutton">
-    </div>
-    <div class="project_info">
-        <p class="pop-company">${getDetail[0].company}</p>
-      <ul class="ul">
-        <li class="pop-role">${getDetail[0].role}</li>
-        <li class="pop-year">${getDetail[0].year}</li>
-    </ul>
-    </div>
-  </div>
-    <img class="popup-image" src='${getDetail[0].img}' alt="Project Popup Image">
-    <div class="below-box">
-    <p class="pop-up-description">${getDetail[0].desc}</p>
-    <div class="sec-box">
-      <ul class="language_used_modal">${modaltechnology}</ul>
-    <div class="modal-button-div">  
-  <a href='${getDetail[0].linkToLive}' class="seelive"><button type="button">See live <img class="button-image" src="images/export.svg" alt="live"> </button></a>    
-  <a href='${getDetail[0].linkToSource}' class="seesource"><button type="button">See source  <img class="button-image" src="images/github.png" alt="github"></button></a>  
-    </div>
-    </div>
-  </div>
-  </div>
-  `;
-  Modal.style.display = 'block';
-};
-
-const CloseModal = () => {
-  Modal.style.display = 'none';
-  document.querySelector('main').style.display = 'block';
-  document.querySelector('header').style.display = 'flex';
-};
-
-for (let i = 0; i < arrWork.length; i++) {
+for (let i = 0; i < arrWork.length; i += 1) {
   let languages = '';
   arrWork[i].technologies.forEach((language) => {
     languages += `
